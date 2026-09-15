@@ -53,16 +53,17 @@ document.querySelectorAll(".mobile-menu a")
 ===================================== */
 
 /*
-    開催日が決定したら、ここを変更。
-
-    例：
+    開催日確定：
     const targetDate =
         new Date("2026-10-15T20:00:00+09:00");
 
-    現在は開催日未定なので null。
+   　開催日未定：
+   const targetDate = null;
+
 */
 
-const targetDate = null;
+const targetDate =
+        new Date("2026-10-31T21:00:00+09:00");
 
 
 function updateCountdown() {
