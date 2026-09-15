@@ -1,1083 +1,393 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>NID CUSTOM | VLRT Daily Match</title>
-
-    <meta name="description"
-          content="NID CUSTOM - Nidmegent Esportsが主催するVALORANT Daily Match">
-
-    <meta name="theme-color" content="#050505">
-
-    <link rel="icon" href="assets/nidcustom.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<title>NID CUSTOM | Daily Match</title>
+<meta name="description" content="NID CUSTOM - Nidmegent Esportsが主催するVALORANT Daily Match">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="assets/nidcustom.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-
 <!-- =====================================
      LOADING
 ===================================== -->
-
 <div id="loading-screen">
-
-    <div class="loading-content">
-
-        <img src="assets/nidcustom.png"
-             class="loading-logo"
-             alt="NID CUSTOM">
-
-        <div class="loading-line">
-            <span></span>
-        </div>
-
-        <div class="loading-text">
-            INITIALIZING NID CUSTOM
-        </div>
-
-    </div>
-
+<div class="loading-content">
+<img src="assets/nidcustom.png" class="loading-logo" alt="NID CUSTOM">
+<div class="loading-line">
+<span></span>
 </div>
-
-
+<div class="loading-text">INITIALIZING NID CUSTOM</div>
+</div>
+</div>
 <!-- =====================================
      BACKGROUND
 ===================================== -->
-
 <div class="background">
-
-    <div class="grid"></div>
-
-    <div class="red-glow glow-1"></div>
-    <div class="red-glow glow-2"></div>
-
-    <canvas id="particles"></canvas>
-
+<div class="grid"></div>
+<div class="red-glow glow-1"></div>
+<div class="red-glow glow-2"></div>
+<canvas id="particles"></canvas>
 </div>
-
-
 <!-- =====================================
      CURSOR
 ===================================== -->
-
 <div class="cursor-glow"></div>
-
-
 <!-- =====================================
      HEADER
 ===================================== -->
-
 <header class="header">
-
-    <div class="header-inner">
-
-        <a href="#home" class="header-logo">
-            <img src="assets/nidcustom.png"
-                 alt="NID CUSTOM">
-        </a>
-
-
-        <nav class="nav">
-
-            <a href="#about">ABOUT</a>
-            <a href="#match">MATCH</a>
-            <a href="#rules">RULES</a>
-            <a href="#entry">ENTRY</a>
-            <a href="#stream">STREAM</a>
-            <a href="#news">NEWS</a>
-
-        </nav>
-
-
-        <button class="menu-button" id="menuButton">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </button>
-
-    </div>
-
+<div class="header-inner">
+<a href="#home" class="header-logo">
+<img src="assets/nidcustom.png" alt="NID CUSTOM">
+</a>
+<nav class="nav">
+<a href="#about">ABOUT</a>
+<a href="#match">MATCH</a>
+<a href="#rules">RULES</a>
+<a href="#entry">ENTRY</a>
+<a href="#stream">STREAM</a>
+<a href="#news">NEWS</a>
+</nav>
+<button class="menu-button" id="menuButton">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
 </header>
-
-
 <!-- =====================================
      MOBILE MENU
 ===================================== -->
-
 <div class="mobile-menu" id="mobileMenu">
-
-    <a href="#about">ABOUT</a>
-    <a href="#match">MATCH</a>
-    <a href="#rules">RULES</a>
-    <a href="#entry">ENTRY</a>
-    <a href="#stream">STREAM</a>
-    <a href="#news">NEWS</a>
-
+<a href="#about">ABOUT</a>
+<a href="#match">MATCH</a>
+<a href="#rules">RULES</a>
+<a href="#entry">ENTRY</a>
+<a href="#stream">STREAM</a>
+<a href="#news">NEWS</a>
 </div>
-
-
 <!-- =====================================
      MAIN
 ===================================== -->
-
 <main>
-
-
 <!-- =====================================
      HERO
 ===================================== -->
-
 <section class="hero" id="home">
-
-    <div class="hero-lines"></div>
-
-    <div class="hero-content">
-
-        <div class="hero-small">
-            NIDMEGENT ESPORTS PRESENTS
-        </div>
-
-
-        <img src="assets/nidcustom.png"
-             class="hero-logo"
-             alt="NID CUSTOM">
-
-
-        <div class="hero-subtitle">
-            VALORANT CUSTOM MATCH
-        </div>
-
-
-        <p class="hero-copy">
-            A NEW BATTLE.<br>
-            A NEW CHANCE.
-        </p>
-
-
-        <div class="hero-buttons">
-
-            <a href="#entry" class="btn btn-primary">
-                ENTRY NOW
-                <span>→</span>
-            </a>
-
-            <a href="#about" class="btn btn-outline">
-                DISCOVER NID CUSTOM
-                <span>↓</span>
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="hero-bottom">
-
-        <div>
-            <span>HOSTED BY</span>
-            <strong>NIDMEGENT ESPORTS</strong>
-        </div>
-
-        <div>
-            <span>GAME</span>
-            <strong>VALORANT</strong>
-        </div>
-
-        <div>
-            <span>STATUS</span>
-            <strong class="status">
-                <i></i>
-                ONLINE
-            </strong>
-        </div>
-
-    </div>
-
-
-    <div class="scroll-indicator">
-
-        <span>SCROLL</span>
-
-        <div></div>
-
-    </div>
-
+<div class="hero-lines"></div>
+<div class="hero-content">
+<div class="hero-small">NIDMEGENT ESPORTS PRESENTS</div>
+<img src="assets/nidcustom.png" class="hero-logo" alt="NID CUSTOM">
+<div class="hero-subtitle">VALORANT DAILY MATCH</div>
+<p class="hero-copy">A NEW BATTLE.<br>A NEW CHANCE.</p>
+<div class="hero-buttons">
+<a href="#entry" class="btn btn-primary">ENTRY NOW<span>→</span></a>
+<a href="#about" class="btn btn-outline">DISCOVER NID CUSTOM<span>↓</span>
+</a>
+</div>
+</div>
 </section>
-
-
-
 <!-- =====================================
      NEXT MATCH
 ===================================== -->
-
 <section class="next-match section-dark">
-
-    <div class="container">
-
-        <div class="section-label">
-            <span>01</span>
-            NEXT MATCH
-        </div>
-
-
-        <div class="next-match-header">
-
-            <div>
-
-                <h2>
-                    THE NEXT
-                    <strong>BATTLE</strong>
-                </h2>
-
-                <p>
-                    次なる戦いまで、あと少し。
-                </p>
-
-            </div>
-
-
-            <div class="next-match-info">
-
-                <span>NID CUSTOM #01</span>
-
-                <strong id="matchDate">
-                    2026.10.01
-                </strong>
-
-            </div>
-
-        </div>
-
-
-        <div class="countdown">
-
-            <div class="time-box">
-
-                <strong id="days">00</strong>
-                <span>DAYS</span>
-
-            </div>
-
-
-            <div class="colon">:</div>
-
-
-            <div class="time-box">
-
-                <strong id="hours">00</strong>
-                <span>HOURS</span>
-
-            </div>
-
-
-            <div class="colon">:</div>
-
-
-            <div class="time-box">
-
-                <strong id="minutes">00</strong>
-                <span>MINUTES</span>
-
-            </div>
-
-
-            <div class="colon">:</div>
-
-
-            <div class="time-box">
-
-                <strong id="seconds">00</strong>
-                <span>SECONDS</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
+<div class="container">
+<div class="section-label"><span>01</span>NEXT MATCH
+</div>
+<div class="next-match-header">
+<div>
+<h2>THE NEXT<strong>BATTLE</strong></h2>
+<p>次なる戦いまで、あと少し。</p>
+</div>
+<div class="next-match-info">
+<span>NID CUSTOM #01</span>
+<strong id="matchDate">DATE TBA</strong>
+</div>
+</div><div class="countdown" id="countdown">
+<div class="time-box">
+<strong id="days">--</strong><span>DAYS</span>
+</div>
+<div class="colon">:</div>
+<div class="time-box">
+<strong id="hours">--</strong><span>HOURS</span>
+</div>
+<div class="colon">:</div>
+<div class="time-box">
+<strong id="minutes">--</strong><span>MINUTES</span>
+</div>
+<div class="colon">:</div>
+<div class="time-box">
+<strong id="seconds">--</strong><span>SECONDS</span>
+</div>
+</div>
+<div class="tba-message">
+<span>COMING SOON</span>開催日時は後日発表します。
+</div>
+</div>
 </section>
-
-
-
 <!-- =====================================
      ABOUT
 ===================================== -->
-
 <section class="section" id="about">
-
-    <div class="container">
-
-        <div class="section-label">
-            <span>02</span>
-            ABOUT
-        </div>
-
-
-        <div class="about-grid">
-
-            <div class="about-title">
-
-                <h2>
-                    WHAT IS
-                    <strong>NID CUSTOM?</strong>
-                </h2>
-
-            </div>
-
-
-            <div class="about-text">
-
-                <p class="large">
-                    NID CUSTOMは、
-                    Nidmegent Esportsが主催する
-                    VALORANT CUSTOM MATCH EVENT。
-                </p>
-
-
-                <p>
-                    初心者から経験者まで。
-                    誰もがVALORANTを楽しみながら、
-                    本気で競い合える場所を目指しています。
-                </p>
-
-
-                <p>
-                    勝つために挑む。<br>
-                    仲間と楽しむ。<br>
-                    そして、もう一度挑戦する。
-                </p>
-
-
-                <p class="about-highlight">
-                    あなたの次の一戦を、ここから。
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="about-cards">
-
-            <div class="about-card">
-
-                <span>01</span>
-
-                <h3>
-                    COMPETE
-                </h3>
-
-                <p>
-                    本気で勝利を目指す。
-                </p>
-
-            </div>
-
-
-            <div class="about-card">
-
-                <span>02</span>
-
-                <h3>
-                    CONNECT
-                </h3>
-
-                <p>
-                    仲間と出会い、戦う。
-                </p>
-
-            </div>
-
-
-            <div class="about-card">
-
-                <span>03</span>
-
-                <h3>
-                    CHALLENGE
-                </h3>
-
-                <p>
-                    もう一度、挑戦する。
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
+<div class="container">
+<div class="section-label"><span>02</span>ABOUT</div>
+<div class="about-grid">
+<div class="about-title">
+<h2>WHAT IS<strong>NID CUSTOM?</strong></h2>
+</div>
+<div class="about-text">
+<p class="large">NID CUSTOMは、Nidmegent Esportsが主催するVALORANT DAILY MATCH EVENT。</p>
+<p>各回2チームで行われる、1試合限定のBO1カスタムマッチ。</p>
+<p>開催日の前々日22:00までエントリーを受け付けます。</p>
+<p>勝つために挑む。<br>仲間と楽しむ。<br>そして、もう一度挑戦する。</p>
+<p class="about-highlight">あなたの次の一戦を、ここから。</p>
+</div></div>
+<div class="about-cards">
+<div class="about-card">
+<span>01</span>
+<h3>COMPETE</h3><p>本気で勝利を目指す。</p>
+</div>
+<div class="about-card">
+<span>02</span>
+<h3>CONNECT</h3>
+<p>仲間と出会い、戦う。</p></div>
+<div class="about-card">
+<span>03</span><h3>CHALLENGE</h3>
+<p>もう一度、挑戦する。</p>
+</div></div>
+</div>
 </section>
-
-
-
 <!-- =====================================
      MATCH
 ===================================== -->
-
 <section class="section section-dark" id="match">
+<div class="container">
+<div class="section-label">
+<span>03</span>MATCH</div>
+<div class="section-heading">
+<h2>MATCH<strong>FORMAT</strong></h2>
+<p>NID CUSTOMの試合形式</p>
+</div>
+<div class="format-grid">
+<div class="format-card">
+<span>01</span>
+<div class="format-icon">VS</div><h3>5 VS 5</h3><p>TEAM BATTLE</p></div>
+<div class="format-card">
+<span>02</span>
+<div class="format-icon">BO</div>
+<h3>BO1 - 1Match</h3><p>MATCH FORMAT</p>
+</div>
+<div class="format-card">
+<span>03</span>
+<div class="format-icon">MAP</div>
+<h3>Random Competitive Map</h3><p>MAP SELECTION</p>
+</div>
+<div class="format-card">
+<span>04</span><div class="format-icon">PC</div>
+<h3>ONLINE</h3><p>ONLINE MATCH</p>
+</div>
+</div>
+<div class="match-card">
+<div class="match-top">
 
-    <div class="container">
+<span>NID CUSTOM #01</span>
+<span>UPCOMING</span>
 
-        <div class="section-label">
-            <span>03</span>
-            MATCH
-        </div>
+</div>
+<div class="match-teams">
+<div class="team">
+<span>TEAM A</span>
 
+<strong>—</strong>
 
-        <div class="section-heading">
+</div>
+<div class="vs">VS</div>
+<div class="team">
+<span>TEAM B</span>
+    
+<strong>—</strong>
 
-            <h2>
-                MATCH
-                <strong>FORMAT</strong>
-            </h2>
-
-            <p>
-                NID CUSTOMの試合形式
-            </p>
-
-        </div>
-
-
-        <div class="format-grid">
-
-            <div class="format-card">
-
-                <span>01</span>
-
-                <div class="format-icon">
-                    VS
-                </div>
-
-                <h3>
-                    5 VS 5
-                </h3>
-
-                <p>
-                    TEAM BATTLE
-                </p>
-
-            </div>
-
-
-            <div class="format-card">
-
-                <span>02</span>
-
-                <div class="format-icon">
-                    BO
-                </div>
-
-                <h3>
-                    BO1 / BO3
-                </h3>
-
-                <p>
-                    MATCH FORMAT
-                </p>
-
-            </div>
-
-
-            <div class="format-card">
-
-                <span>03</span>
-
-                <div class="format-icon">
-                    MAP
-                </div>
-
-                <h3>
-                    MAP VETO
-                </h3>
-
-                <p>
-                    MAP SELECTION
-                </p>
-
-            </div>
-
-
-            <div class="format-card">
-
-                <span>04</span>
-
-                <div class="format-icon">
-                    PC
-                </div>
-
-                <h3>
-                    ONLINE
-                </h3>
-
-                <p>
-                    ONLINE MATCH
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="match-card">
-
-            <div class="match-top">
-
-                <span>
-                    NID CUSTOM #01
-                </span>
-
-                <span>
-                    UPCOMING
-                </span>
-
-            </div>
-
-
-            <div class="match-teams">
-
-                <div class="team">
-                    <span>TEAM A</span>
-                    <strong>—</strong>
-                </div>
-
-
-                <div class="vs">
-                    VS
-                </div>
-
-
-                <div class="team">
-                    <span>TEAM B</span>
-                    <strong>—</strong>
-                </div>
-
-            </div>
-
-
-            <div class="match-bottom">
-
-                <span>
-                    20:00 START
-                </span>
-
-                <span>
-                    ONLINE
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
+</div>
+</div>
+<div class="match-bottom">
+<span>21:00 START</span>
+<span>ONLINE</span>
+</div>
+</div>
+</div>
 </section>
-
-
-
 <!-- =====================================
      RULES
 ===================================== -->
-
 <section class="section" id="rules">
-
-    <div class="container">
-
-        <div class="section-label">
-            <span>04</span>
-            RULES
-        </div>
-
-
-        <div class="section-heading">
-
-            <h2>
-                RULES &
-                <strong>GUIDELINES</strong>
-            </h2>
-
-            <p>
-                大会ルール・注意事項
-            </p>
-
-        </div>
-
-
-        <div class="rules-list">
-
-
-            <details open>
-
-                <summary>
-
-                    <span>01</span>
-
-                    参加条件
-
-                    <b>+</b>
-
-                </summary>
-
-                <div class="rule-content">
-
-                    <p>
-                        NID CUSTOMの参加条件について記載します。
-                    </p>
-
-                </div>
-
-            </details>
-
-
-            <details>
-
-                <summary>
-
-                    <span>02</span>
-
-                    試合形式
-
-                    <b>+</b>
-
-                </summary>
-
-                <div class="rule-content">
-
-                    <p>
-                        試合形式・ラウンド構成・マップなどについて記載します。
-                    </p>
-
-                </div>
-
-            </details>
-
-
-            <details>
-
-                <summary>
-
-                    <span>03</span>
-
-                    禁止事項
-
-                    <b>+</b>
-
-                </summary>
-
-                <div class="rule-content">
-
-                    <p>
-                        チート・不正行為・暴言など、
-                        大会で禁止される行為について記載します。
-                    </p>
-
-                </div>
-
-            </details>
-
-
-            <details>
-
-                <summary>
-
-                    <span>04</span>
-
-                    試合進行
-
-                    <b>+</b>
-
-                </summary>
-
-                <div class="rule-content">
-
-                    <p>
-                        集合時間、チェックイン、
-                        試合開始までの流れについて記載します。
-                    </p>
-
-                </div>
-
-            </details>
-
-
-            <details>
-
-                <summary>
-
-                    <span>05</span>
-
-                    その他
-
-                    <b>+</b>
-
-                </summary>
-
-                <div class="rule-content">
-
-                    <p>
-                        その他大会運営が必要と判断した事項について
-                        記載します。
-                    </p>
-
-                </div>
-
-            </details>
-
-
-        </div>
-
-    </div>
-
+<div class="container">
+<div class="section-label"><span>04</span>RULES</div>
+<div class="section-heading">
+<h2>RULES &<strong>GUIDELINES</strong></h2><p>大会ルール・注意事項</p>
+</div>
+<div class="rules-list">
+<details open>
+<summary><span>01</span>参加条件<b>+</b></summary>
+<div class="rule-content">
+<p>
+NID CUSTOMの参加条件について記載します。
+</p>
+</div>
+</details><details>
+<summary>
+<span>02</span>試合形式<b>+</b></summary>
+<div class="rule-content">
+<p>
+試合形式・ラウンド構成・マップなどについて記載します。
+</p>
+</div>
+</details><details>
+<summary>
+<span>03</span>禁止事項<b>+</b></summary>
+<div class="rule-content">
+<p>
+チート・不正行為・暴言など、
+大会で禁止される行為について記載します。
+</p>
+</div>
+</details><details>
+<summary>
+<span>04</span>試合進行<b>+</b></summary>
+<div class="rule-content">
+<p>
+集合時間、チェックイン、
+試合開始までの流れについて記載します。
+</p>
+</div>
+</details><details>
+<summary>
+<span>05</span>その他<b>+</b></summary>
+<div class="rule-content">
+<p>
+その他大会運営が必要と判断した事項について
+記載します。
+</p>
+</div>
+</details>
+</div>
+</div>
 </section>
-
-
-
 <!-- =====================================
      ENTRY
 ===================================== -->
-
 <section class="entry-section" id="entry">
-
-    <div class="entry-bg"></div>
-
-    <div class="container">
-
-        <div class="entry-content">
-
-            <div class="section-label">
-                <span>05</span>
-                ENTRY
-            </div>
-
-
-            <h2>
-                READY TO
-                <strong>PLAY?</strong>
-            </h2>
-
-
-            <p>
-                次の戦場へ。
-                あなたのチームで挑戦しよう。
-            </p>
-
-
-            <!-- Google FormなどのURLに変更 -->
-
-            <a href="#"
-               class="btn btn-primary btn-large"
-               id="entryButton">
-
-                ENTRY NOW
-
-                <span>↗</span>
-
-            </a>
-
-
-            <small>
-                ※参加受付開始後にエントリーフォームへ接続されます。
-            </small>
-
-        </div>
-
-    </div>
-
+<div class="entry-bg"></div>
+<div class="container">
+<div class="entry-content">
+<div class="section-label"><span>05</span>ENTRY</div>
+<h2>READY TO<strong>PLAY?</strong></h2>
+<p>次の戦場へ。あなたのチームで挑戦しよう。</p>
+<!-- Google FormなどのURLに変更 -->
+<a href="#" class="btn btn-primary btn-large" id="entryButton">ENTRY NOW<span>↗</span>
+</a>
+<small>※参加受付開始後にエントリーフォームへ接続されます。<br>ComingSoon</small>
+</div>
+<div class="community-link">
+<span>JOIN OUR COMMUNITY
+</span>
+<a href="https://discord.gg/c28g9XaCrr" target="_blank" rel="noopener noreferrer" class="discord-button">
+JOIN DISCORD
+<span>↗</span>
+</a>
+</div>
+</div>
 </section>
-
-
-
 <!-- =====================================
      STREAM
 ===================================== -->
-
 <section class="section section-dark" id="stream">
-
-    <div class="container">
-
-        <div class="section-label">
-            <span>06</span>
-            STREAM
-        </div>
-
-
-        <div class="stream-grid">
-
-            <div class="stream-title">
-
-                <h2>
-                    WATCH THE
-                    <strong>BATTLE</strong>
-                </h2>
-
-                <p>
-                    NID CUSTOMの試合を
-                    ライブでチェック。
-                </p>
-
-            </div>
-
-
-            <div class="stream-card">
-
-                <div class="stream-status">
-
-                    <i></i>
-
-                    LIVE STREAM
-
-                </div>
-
-
-                <div class="stream-placeholder">
-
-                    <span>
-                        STREAM
-                    </span>
-
-                    <small>
-                        MATCH STREAM WILL APPEAR HERE
-                    </small>
-
-                </div>
-
-
-                <a href="#"
-                   class="stream-link">
-
-                    WATCH STREAM
-
-                    <span>↗</span>
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
+<div class="container">
+<div class="section-label">
+<span>06</span>STREAM</div>
+<div class="stream-grid">
+<div class="stream-title">
+<h2>WATCH THE<strong>BATTLE</strong></h2>
+<p>NID CUSTOMの試合をライブでチェック。</p>
+</div>
+<div class="stream-card">
+<div class="stream-status">
+<i></i>LIVE STREAM</div>
+<div class="stream-placeholder">
+<span>STREAM</span>
+<small>MATCH STREAM WILL APPEAR HERE</small>
+</div>
+<a href="https://www.twitch.tv/nidmegent" target="_blank" rel="noopener noreferrer" class="stream-link">
+<span>↗</span>
+</a>
+</div>
+</div>
+</div>
 </section>
-
-
-
 <!-- =====================================
      NEWS
 ===================================== -->
-
 <section class="section" id="news">
+<div class="container">
+<div class="section-label"><span>07</span>NEWS</div>
+<div class="section-heading">
+<h2>LATEST<strong>NEWS</strong></h2>
+</div>
 
-    <div class="container">
+<div class="news-list">
+<article class="news-item">
+<time>2026.09.15
+</time>
+<div>
+<span class="news-tag">INFORMATION</span><h3>NID CUSTOM OFFICIAL SITE OPEN</h3>
+</div><span class="news-arrow">→</span>
+</article>
 
-        <div class="section-label">
-            <span>07</span>
-            NEWS
-        </div>
-
-
-        <div class="section-heading">
-
-            <h2>
-                LATEST
-                <strong>NEWS</strong>
-            </h2>
-
-        </div>
-
-
-        <div class="news-list">
-
-
-            <article class="news-item">
-
-                <time>
-                    2026.09.15
-                </time>
-
-                <div>
-
-                    <span class="news-tag">
-                        INFORMATION
-                    </span>
-
-                    <h3>
-                        NID CUSTOM OFFICIAL SITE OPEN
-                    </h3>
-
-                </div>
-
-                <span class="news-arrow">
-                    →
-                </span>
-
-            </article>
-
-
-            <article class="news-item">
-
-                <time>
-                    2026.09.XX
-                </time>
-
-                <div>
-
-                    <span class="news-tag">
-                        EVENT
-                    </span>
-
-                    <h3>
-                        NID CUSTOM #01 開催決定
-                    </h3>
-
-                </div>
-
-                <span class="news-arrow">
-                    →
-                </span>
-
-            </article>
-
-
-            <article class="news-item">
-
-                <time>
-                    2026.09.XX
-                </time>
-
-                <div>
-
-                    <span class="news-tag">
-                        ENTRY
-                    </span>
-
-                    <h3>
-                        エントリー受付開始
-                    </h3>
-
-                </div>
-
-                <span class="news-arrow">
-                    →
-                </span>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
+</div>
+</div>
 </section>
-
-
-
 <!-- =====================================
      ORGANIZER
 ===================================== -->
-
 <section class="organizer">
-
-    <div class="container">
-
-        <div class="organizer-inner">
-
-            <div>
-
-                <span>
-                    ORGANIZED BY
-                </span>
-
-                <h2>
-                    NIDMEGENT
-                    <strong>ESPORTS</strong>
-                </h2>
-
-            </div>
-
-
-            <div class="organizer-copy">
-
-                <p>
-                    WE TAKE THE NEXT ERA.
-                </p>
-
-                <p>
-                    楽しく、ときには本気で。
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
+<div class="container">
+<div class="organizer-inner">
+<div><span>ORGANIZED BY</span>
+<h2>NIDMEGENT<strong>ESPORTS</strong></h2>
+</div>
+<div class="organizer-copy">
+<p>WE TAKE THE NEXT ERA.</p>
+<p>楽しく、ときには本気で。</p>
+</div>
+</div>
+</div>
 </section>
-
-
 </main>
-
-
-
 <!-- =====================================
      FOOTER
 ===================================== -->
-
 <footer class="footer">
-
-    <div class="container">
-
-        <div class="footer-top">
-
-            <img src="assets/nidcustom.png"
-                 alt="NID CUSTOM"
-                 class="footer-logo">
-
-
-            <div class="footer-links">
-
-                <a href="#about">ABOUT</a>
-                <a href="#match">MATCH</a>
-                <a href="#rules">RULES</a>
-                <a href="#entry">ENTRY</a>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
-
-            <span>
-                © 2026 NIDMEGENT ESPORTS
-            </span>
-
-            <span>
-                NID CUSTOM
-            </span>
-
-        </div>
-
-    </div>
-
+<div class="container">
+<div class="footer-top">
+<img src="assets/nidcustom.png" alt="NID CUSTOM" class="footer-logo">
+<div class="footer-links">
+<a href="#about">ABOUT</a>
+<a href="#match">MATCH</a>
+<a href="#rules">RULES</a>
+<a href="#entry">ENTRY</a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 NIDMEGENT ESPORTS</span>
+<span>NID CUSTOM</span>
+</div>
+</div>
 </footer>
-
-
 <script src="script.js"></script>
-
 </body>
 </html>
