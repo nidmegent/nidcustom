@@ -1818,3 +1818,165 @@ button {
     }
 
 }
+
+/* =====================================
+   TBA
+===================================== */
+
+.tba-message {
+    display: block;
+
+    margin-top: 30px;
+
+    text-align: center;
+
+    color: #555;
+
+    font-size: 10px;
+
+    letter-spacing: 0.15em;
+}
+
+.tba-message span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #ff3048;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.2em;
+}
+
+
+/* =====================================
+   ENTRY INFO
+===================================== */
+
+.entry-info {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 50px;
+
+    margin: 45px 0 35px;
+}
+
+.entry-info div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.entry-info span {
+    color: #555;
+
+    font-size: 8px;
+
+    letter-spacing: 0.18em;
+}
+
+.entry-info strong {
+    font-size: 12px;
+
+    letter-spacing: 0.08em;
+}
+
+
+/* =====================================
+   DISCORD
+===================================== */
+
+.community-link {
+    margin-top: 45px;
+
+    padding-top: 35px;
+
+    border-top: 1px solid #222;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.community-link > span {
+    color: #555;
+
+    font-size: 8px;
+
+    letter-spacing: 0.2em;
+}
+
+.discord-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 12px 20px;
+
+    border: 1px solid #333;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+
+    transition: 0.3s;
+}
+
+.discord-button:hover {
+    border-color: #fff;
+
+    transform: translateY(-2px);
+}
+
+.discord-button span {
+    font-size: 14px;
+}
+
+
+/* =====================================
+   ENTRY DISABLED
+===================================== */
+
+.entry-disabled {
+    opacity: 0.55;
+
+    cursor: default;
+
+    pointer-events: none;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .entry-info {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .community-link {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+}
