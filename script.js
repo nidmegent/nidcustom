@@ -53,23 +53,57 @@ document.querySelectorAll(".mobile-menu a")
 ===================================== */
 
 /*
-    ▼ 大会開催日時をここで変更 ▼
+    開催日が決定したら、ここを変更。
 
     例：
+    const targetDate =
+        new Date("2026-10-15T20:00:00+09:00");
 
-    2026年10月1日 20:00
+    現在は開催日未定なので null。
 */
 
-const targetDate =
-    new Date("2026-10-01T20:00:00+09:00");
+const targetDate = null;
 
 
 function updateCountdown() {
 
+    const countdown =
+        document.getElementById("countdown");
+
+    const tbaMessage =
+        document.querySelector(".tba-message");
+
+
+    /*
+        開催日未定
+    */
+
+    if (!targetDate) {
+
+        countdown.classList.add("tba");
+
+        if (tbaMessage) {
+            tbaMessage.style.display = "block";
+        }
+
+        return;
+    }
+
+
+    /*
+        開催日決定後
+    */
+
+    if (tbaMessage) {
+        tbaMessage.style.display = "none";
+    }
+
+
     const now = new Date();
 
     const difference =
-        targetDate.getTime() - now.getTime();
+        targetDate.getTime() -
+        now.getTime();
 
 
     if (difference <= 0) {
@@ -80,7 +114,6 @@ function updateCountdown() {
         document.getElementById("seconds").textContent = "00";
 
         return;
-
     }
 
 
