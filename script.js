@@ -63,7 +63,7 @@ document.querySelectorAll(".mobile-menu a")
 */
 
 const targetDate =
-        new Date("2027-1-24T21:00:00+09:00");
+        new Date("2027-01-24T21:00:00+09:00");
 
 
 function updateCountdown() {
